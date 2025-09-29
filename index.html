@@ -25,11 +25,20 @@
       align-items: center;
       color: white;
       text-shadow: 2px 2px 6px black;
+      text-align: center;
+    }
+    .card {
+      transition: 0.3s;
+      height: 100%;
     }
     .card:hover {
       transform: scale(1.05);
-      transition: 0.3s;
       box-shadow: 0px 6px 12px rgba(255, 215, 0, 0.5);
+    }
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
   </style>
 </head>
@@ -44,7 +53,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
           <li class="nav-item"><a href="destinations.html" class="nav-link">Destinations</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
           <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
@@ -54,47 +63,64 @@
   </nav>
 
   <!-- Hero -->
-  <section class="hero text-center">
-    <h1 class="display-3">Explore the World with WanderLuxe Travels</h1>
+  <section class="hero">
+    <div>
+      <h1 class="display-3">Explore the World with WanderLuxe Travels</h1>
+      <p class="lead">Luxury vacations, curated experiences, unforgettable memories</p>
+    </div>
   </section>
 
-  <!-- Highlights -->
+  <!-- Highlights / Popular Packages -->
   <div class="container my-5">
     <h2 class="text-center text-warning mb-4">Popular Packages</h2>
     <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card bg-dark text-light">
+      
+      <!-- Package 1 -->
+      <div class="col-md-4 d-flex">
+        <div class="card bg-dark text-light h-100">
           <img src="images/paris.jpg" class="card-img-top" alt="Paris">
           <div class="card-body">
-            <h5 class="card-title">Paris Getaway</h5>
-            <p>Experience the city of lights with a luxury touch.</p>
-            <a href="destinations.html" class="btn btn-warning">View More</a>
+            <div>
+              <h5 class="card-title">Paris Getaway</h5>
+              <p>Experience the city of lights with a luxury touch.</p>
+            </div>
+            <a href="destinations.html" class="btn btn-warning mt-auto">View More</a>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card bg-dark text-light">
+
+      <!-- Package 2 -->
+      <div class="col-md-4 d-flex">
+        <div class="card bg-dark text-light h-100">
           <img src="images/bali.jpg" class="card-img-top" alt="Bali">
           <div class="card-body">
-            <h5 class="card-title">Bali Escape</h5>
-            <p>Relax on pristine beaches with golden sunsets.</p>
-            <a href="destinations.html" class="btn btn-warning">View More</a>
+            <div>
+              <h5 class="card-title">Bali Escape</h5>
+              <p>Relax on pristine beaches with golden sunsets.</p>
+            </div>
+            <a href="destinations.html" class="btn btn-warning mt-auto">View More</a>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card bg-dark text-light">
+
+      <!-- Package 3 -->
+      <div class="col-md-4 d-flex">
+        <div class="card bg-dark text-light h-100">
           <img src="images/newYork.jpg" class="card-img-top" alt="New York">
           <div class="card-body">
-            <h5 class="card-title">New York Adventure</h5>
-            <p>Discover the big city with our premium guides.</p>
-            <a href="destinations.html" class="btn btn-warning">View More</a>
+            <div>
+              <h5 class="card-title">New York Adventure</h5>
+              <p>Discover the big city with our premium guides.</p>
+            </div>
+            <a href="destinations.html" class="btn btn-warning mt-auto">View More</a>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 
+  <!-- Footer -->
   <footer class="bg-black text-center text-light py-3">
     © 2025 WanderLuxe Travels | Luxury Redefined
   </footer>
