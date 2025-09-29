@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinations | WanderLuxe</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #2b2b2b;
+      color: #f5f5f5;
+    }
+    .card {
+      background: #1e1e1e;
+      color: #fff;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 6px 12px rgba(255, 215, 0, 0.4);
+    }
+    .navbar {
+      background: #1e1e1e;
+    }
+    .navbar a:hover {
+      color: gold !important;
+    }
+    .price {
+      color: gold;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand text-warning fw-bold" href="index.html">WanderLuxe</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="destinations.html" class="nav-link active">Destinations</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Destination Packages -->
+  <div class="container my-5">
+    <h2 class="text-warning text-center mb-4">Our Exclusive Travel Plans</h2>
+    <div class="row g-4">
+
+      <!-- Package 1 -->
+      <div class="col-md-4 d-flex">
+        <div class="card h-100">
+          <img src="images/paris.jpg" class="card-img-top" alt="Paris">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Paris Getaway</h5>
+            <p class="price">₹85,000 / person</p>
+            <p><strong>Duration:</strong> 5 Days, 4 Nights</p>
+            <p><strong>Includes:</strong> Flights, 4-Star Hotel, City Tour, Eiffel Tower Entry</p>
+            <div class="mt-auto">
+              <a href="#" class="btn btn-warning w-100">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Package 2 -->
+      <div class="col-md-4 d-flex">
+        <div class="card h-100">
+          <img src="images/bali.jpg" class="card-img-top" alt="Bali">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Bali Escape</h5>
+            <p class="price">₹65,000 / person</p>
+            <p><strong>Duration:</strong> 6 Days, 5 Nights</p>
+            <p><strong>Includes:</strong> Flights, Beach Resort Stay, Island Tour, Spa Package</p>
+            <div class="mt-auto">
+              <a href="#" class="btn btn-warning w-100">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Package 3 -->
+      <div class="col-md-4 d-flex">
+        <div class="card h-100">
+          <img src="images/newYork.jpg" class="card-img-top" alt="New York">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">New York Adventure</h5>
+            <p class="price">₹95,000 / person</p>
+            <p><strong>Duration:</strong> 7 Days, 6 Nights</p>
+            <p><strong>Includes:</strong> Flights, Hotel, Statue of Liberty Tour, Broadway Show</p>
+            <div class="mt-auto">
+              <a href="#" class="btn btn-warning w-100">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Package 4 -->
+      <div class="col-md-4 d-flex">
+        <div class="card h-100">
+          <img src="images/SwissAlps.jpg" class="card-img-top" alt="Swiss Alps">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Swiss Alps Journey</h5>
+            <p class="price">₹1,20,000 / person</p>
+            <p><strong>Duration:</strong> 8 Days, 7 Nights</p>
+            <p><strong>Includes:</strong> Flights, Luxury Chalet Stay, Ski Pass, Mountain Train</p>
+            <div class="mt-auto">
+              <a href="#" class="btn btn-warning w-100">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Package 5 -->
+      <div class="col-md-4 d-flex">
+        <div class="card h-100">
+          <img src="images/egypt.jpg" class="card-img-top" alt="Egypt">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Egyptian Treasures</h5>
+            <p class="price">₹75,000 / person</p>
+            <p><strong>Duration:</strong> 6 Days, 5 Nights</p>
+            <p><strong>Includes:</strong> Flights, Nile Cruise, Pyramid Tours, Museum Visit</p>
+            <div class="mt-auto">
+              <a href="#" class="btn btn-warning w-100">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Package 6 -->
+      <div class="col-md-4 d-flex">
+        <div class="card h-100">
+          <img src="images/tokyo.jpg" class="card-img-top" alt="Tokyo">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Tokyo Explorer</h5>
+            <p class="price">₹90,000 / person</p>
+            <p><strong>Duration:</strong> 7 Days, 6 Nights</p>
+            <p><strong>Includes:</strong> Flights, Hotel, City Tour, Disneyland Tickets</p>
+            <div class="mt-auto">
+              <a href="#" class="btn btn-warning w-100">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
